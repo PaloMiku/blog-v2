@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const appConfig = useAppConfig()
 
 const blogLog = [
     { date: '2026-09-18', content: '域名到期，非必要情况会保持续费' },
