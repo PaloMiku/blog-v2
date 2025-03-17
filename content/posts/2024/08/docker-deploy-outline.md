@@ -1,6 +1,6 @@
 ---
 title: Docker部署Outline并使用Github作为OAuth服务
-description: 前段时间，我所属的组织木创社需要部署一个文档协作程序，在一番挑选（其实以前就用过）之后选中了Outline作为文档协作程序，看了眼网上部署教程，依然抽象，实际上如果不考虑把Nginx集成的话其实不算特别困难，因为不需要特殊的权限管理和分配，所以直接在木创社GitHub组织新建了OAuth App作为登录验证方式，这样也省去自建SSO服务的麻烦。
+description: 手把手教你用Docker Compose搭建企业级知识库系统！从零开始部署Outline核心服务，搭配PostgreSQL和Redis黄金组合，通过Minio打造私有云存储。深度整合GitHub登录体系，揭秘生产级环境变量配置技巧，附带Nginx反向代理实战指南，让协作知识库安全落地。
 date: 2024-8-7 19:24:26
 updated: 2024-8-7 23:30:53
 categories: [技术探索]
