@@ -1,0 +1,51 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout source repo
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 22
+
+    - name: Install dependencies
+      run: pnpm install
+
+    - name: Generate static files
+      run: pnpm run generate
+
+    - name: Configure Git
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+
+    - name: Deploy to target repo
+      env:
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+        TARGET_REPO: git@github.com:your-username/target-repo.git
+      run: |
+        mkdir -p ~/.ssh
+        echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+        git clone $TARGET_REPO deploy-target
+
+        cd deploy-target
+        git rm -rf .
+        git clean -fxd
+        cp -r ../dist/* .
+
+        git add -A
+        git commit -m "Deploy: $(date +'%Y-%m-%d %H:%M:%S')"
+        git push origin main
