@@ -21,7 +21,7 @@ link: "https://al.sotkg.com"
 #title
 注意
 #default
-《擅长捉弄的高木同学》系列文件全球CDN存储由木创社成员 :badge[南栀]{link="https://blog.yuruzzz.cn" img="https://blog.yoruzzz.cn/_next/image?url=https%3A%2F%2Fbu.dusays.com%2F2024%2F06%2F05%2F66605f9c7e600.jpg&w=640&q=75"}，和 :badge[辰灿汐]{link="https://aurorainic.top" img="https://pic.imgdb.cn/item/66be3143d9c307b7e9dbc86e.jpg"}提供，国内文件存储由 :badge[Mikuの鬆]{link="/" img="https://cravatar.cn/avatar/1012bf78fb01d5b964c3a9a0f515911a?s=160"}提供。
+《擅长捉弄的高木同学》系列文件全球CDN存储由木创社成员 :badge[南栀]{link="https://blog.yuruzzz.cn" img="https://blog.yoruzzz.cn/_next/image?url=https%3A%2F%2Fbu.dusays.com%2F2024%2F06%2F05%2F66605f9c7e600.jpg&w=640&q=75"}和 :badge[辰灿汐]{link="https://aurorainic.top" img="https://pic.imgdb.cn/item/66be3143d9c307b7e9dbc86e.jpg"}提供，国内文件存储由 :badge[Mikuの鬆]{link="/" img="https://cravatar.cn/avatar/1012bf78fb01d5b964c3a9a0f515911a?s=160"}提供。
 
 ::
 ::tab{:tabs='["本站信息", "鸣谢名单", "访问密码"]'}
@@ -60,6 +60,6 @@ link: "https://al.sotkg.com"
 **您在此获取访问密码即代表您已阅读并同意“本站信息”内容，严禁倒卖本站资源，本站不支持，不参与一切商业售卖资源文件活动。**
 ::
 
-:copy{prompt="访问密码（可单击复制按钮一键复制）" code="tkg3-7bae-9352-9d93"} 
+:copy{prompt="访问密码" code="tkg3-7bae-9352-9d93"} 
 
 ::
