@@ -28,7 +28,7 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        branch: main  # 目标分支
-        folder: dist  # 部署目录
-        repository-name: your-username/target-repo  # 目标仓库
+        branch: main
+        folder: dist
+        repository-name: PaloMiku/blog-public
         ssh-key: ${{ secrets.DEPLOY_KEY }}
