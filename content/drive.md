@@ -7,10 +7,10 @@ hide-info: true
 
 ::link-card
 ---
-icon: https://pic.imgdb.cn/item/668b6227d9c307b7e94bf6a1.png
-title: Mikuの空间站
-description: 心有多宽，世界就有多远。
-link: "https://al.sotkg.com"
+icon: https://minio-api.tkg3.top/sharkey-assets/sitelogo_178x178.png
+title: Circlari Files
+description: 由 Circlari Operations Team 运营
+link: "https://file.tkg3.top"
 # mirror: # 是否借助第三方图片加载服务，见源代码
 ---
 ::
@@ -38,7 +38,7 @@ link: "https://al.sotkg.com"
 #title
 站点运营主体和相关信息
 #default
-运营主体： :badge[Mikuの鬆]{link="/" img="https://cravatar.cn/avatar/1012bf78fb01d5b964c3a9a0f515911a?s=160"}， :badge[木创社]{link="https://takagi3.top/" img="https://weavatar.com/avatar/7000df4b2ba768f54b8a8851c014559234f7989e3315f84bc4ac15d64a61d2b4?s=512"}
+运营主体： :badge[Mikuの鬆]{link="/" img="https://cravatar.cn/avatar/1012bf78fb01d5b964c3a9a0f515911a?s=160"}， :badge[Circlari Team]{link="https://circle.tkg3.top/" img="https://minio-api.tkg3.top/sharkey-assets/sitelogo_178x178.png"}
 
 服务器信息：后端位于中国香港，前端通过Vercel全球加速和提供安全性保护
 ::
