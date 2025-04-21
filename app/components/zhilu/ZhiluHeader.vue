@@ -59,12 +59,12 @@ const appConfig = useAppConfig()
 }
 
 @font-face {
-    font-family: AlimamaFangYuanTi;
-    src: url("/fonts/AlimamaFangYuanTi.woff2");
+    font-family: LXGWWenKai-Medium;
+    src: url("/fonts/LXGWWenKai-Medium.ttf");
 }
 
 .header-title {
-    font-family: AlimamaFangYuanTi;
+    font-family: LXGWWenKai-Medium;
     font-size: 1.5em;
     font-synthesis: none;
     font-variation-settings: "wght" 600, "BEVL" 100;
