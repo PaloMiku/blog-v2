@@ -22,6 +22,7 @@ const archIcons = {
     'VitePress': 'simple-icons:vitepress',
     'Vue': 'uim:vuejs',
     'WordPress': 'simple-icons:wordpress',
+    'ZBlog': 'mynaui:letter-z-hexagon-solid', // 不准确
     'Zebaur': 'tabler:square-letter-z-filled', // 不准确
 }
 
@@ -38,6 +39,8 @@ export const mainDomainIcons: Record<string, string> = {
     'creativecommons.org': 'ri:creative-commons-line',
     'github.com': 'ri:github-fill',
     'github.io': 'ri:github-fill',
+    'google.cn': 'ri:google-fill',
+    'google.com': 'ri:google-fill',
     'microsoft.com': 'ri:microsoft-fill',
     'netlify.app': 'simple-icons:netlify',
     'pages.dev': 'simple-icons:cloudflare',
@@ -125,8 +128,8 @@ export function getFileIcon(filename?: string) {
 /**
  * 代码块语言简写或别名到 Catppuccin 图标库中的语言名映射
  *
- * 将 blogConfig.shiki.langs 的部分后缀名简写
- * 转换为代码块语言对应的 Iconify Catppuccin图标
+ * 将 `blogConfig.shiki.langs` 的部分后缀名简写
+ * 转换为代码块语言对应的 Iconify Catppuccin 图标
  */
 // @keep-sorted
 const ext2lang: Record<string, string> = {

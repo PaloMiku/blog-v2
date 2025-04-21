@@ -66,9 +66,9 @@ export default defineEventHandler(async (e) => {
         ],
         language: blogConfig.language, // RSS 2.0
         generator: {
-            $uri: 'https://github.com/PaloMiku/',
+            $uri: 'https://github.com/L33Z22L11/blog-v3',
             $version: version,
-            _: 'PaloMiku Blog',
+            _: 'Zhilu Blog',
         },
         icon: blogConfig.favicon,
         logo: blogConfig.author.avatar, // Ratio should be 2:1

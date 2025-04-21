@@ -1,7 +1,8 @@
 <script setup lang="ts">
 const appConfig = useAppConfig()
 const layoutStore = useLayoutStore()
-const _searchStore = useSearchStore()
+// 触发搜索
+useSearchStore()
 
 const keycut = computed(() => navigator?.userAgent.includes('Mac OS') ? '⌘K' : 'Ctrl+K')
 </script>
@@ -14,27 +15,31 @@ const keycut = computed(() => navigator?.userAgent.includes('Mac OS') ? '⌘K' :
     <!-- 此处不能使用 Transition，因为半宽屏状态始终显示 -->
     <aside id="z-sidebar" :class="{ show: layoutStore.isOpen('sidebar') }">
         <ZhiluHeader class="sidebar-header" to="/" />
+
         <nav class="sidebar-nav scrollcheck-y">
             <div class="search-btn sidebar-nav-item gradient-card" @click="layoutStore.toggle('search')">
                 <Icon name="ph:magnifying-glass-bold" />
                 <span class="nav-text">搜索</span>
                 <span class="keycut widescreen-only">{{ keycut }}</span>
             </div>
+
             <template v-for="(group, groupIndex) in appConfig.nav" :key="groupIndex">
                 <h3 v-if="group.title">
                     {{ group.title }}
                 </h3>
+
                 <menu>
                     <li v-for="(item, itemIndex) in group.items" :key="itemIndex">
                         <ZRawLink :to="item.url" class="sidebar-nav-item" @click="layoutStore.toggle('sidebar')">
                             <Icon :name="item.icon" />
                             <span class="nav-text">{{ item.text }}</span>
-                            <Icon v-if="item?.external" class="external-tip" name="ph:arrow-up-right" />
+                            <Icon v-if="isExtLink(item.url)" class="external-tip" name="ph:arrow-up-right" />
                         </ZRawLink>
                     </li>
                 </menu>
             </template>
         </nav>
+
         <footer class="sidebar-footer">
             <ThemeToggle />
             <ZIconNavList :list="appConfig.footer.iconNav" />
@@ -47,6 +52,10 @@ const keycut = computed(() => navigator?.userAgent.includes('Mac OS') ? '⌘K' :
     display: flex;
     flex-direction: column;
     color: var(--c-text-2);
+
+    &:hover {
+        color: currentcolor;
+    }
 
     @media (max-width: $breakpoint-mobile) {
         position: fixed;
@@ -108,7 +117,8 @@ const keycut = computed(() => navigator?.userAgent.includes('Mac OS') ? '⌘K' :
     border-radius: 0.5em;
     transition: all 0.2s;
 
-    &:hover, &.router-link-active {
+    &:hover,
+    &.router-link-active {
         background-color: var(--c-bg-soft);
         color: var(--c-text);
     }
