@@ -60,7 +60,7 @@ const appConfig = useAppConfig()
 
 @font-face {
     font-family: LXGWWenKai-Medium;
-    src: url("/fonts/LXGWWenKai-Medium.ttf");
+    src: url("/fonts/LXGWWenKai-Medium.woff2");
 }
 
 .header-title {
