@@ -41,7 +41,7 @@
     "@zinkawaii/stylelint-config": "^0.3.0",
     "cross-env": "^7.0.3",
     "eslint": "^9.23.0",
-    "nuxt": "~3.13.2",
+    "nuxt": "~3.16.0",
     "remark-reading-time": "^2.0.1",
     "sass": "^1.86.0",
     "shiki": "^2.5.0",
